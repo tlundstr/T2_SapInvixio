@@ -5,5 +5,5 @@
   <value name="node_subtype">unknown</value>
   <value name="node_nsName">t2_sapinvixio</value>
   <value name="node_pkg">T2_SapInvixio</value>
-  <value name="is_public">false</value>
+  <value name="is_public">true</value>
 </Values>
