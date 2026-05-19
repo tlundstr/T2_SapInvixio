@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <array name="StreamingConfiguration" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="name">T2_SapInvixio_Streaming_kafka</value>
+        <value name="description">test</value>
+        <value name="package">T2_SapInvixio</value>
+        <value name="type">Kafka</value>
+        <value name="host">pkc-7xoy1.eu-central-1.aws.confluent.cloud:9092</value>
+        <value name="clientId">IS93dd60b63f</value>
+        <value name="other_properties">security.protocol=SASL_SSL
+client.dns.lookup=use_all_dns_ips
+sasl.mechanism=PLAIN
+sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username='LAUNSGW4W4IVC4WI' password='[*****]' ;
+acks=all
+session.timeout.ms=45000
+client.id=ccloud-java-client-2385c9a8-bf93-4369-8f36-e538bbd09780</value>
+        <value name="other_runtime_properties">acks=all
+security.protocol=SASL_SSL
+streaming.consumer.validate.consumers.not.greater.than.partitions=true
+client.dns.lookup=use_all_dns_ips
+sasl.mechanism=PLAIN
+sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username='LAUNSGW4W4IVC4WI' password='[*****]' ;
+session.timeout.ms=45000
+client.id=ccloud-java-client-2385c9a8-bf93-4369-8f36-e538bbd09780
+streaming.client.publish.mode=asynchronous</value>
+        <value name="enabled">true</value>
+        <value name="securityProtocol">SASL_SSL</value>
+        <value name="truststoreAlias"></value>
+        <value name="keystoreAlias"></value>
+        <null name="keystoreKeyAlias"/>
+        <array name="subjects" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="referenceId">test</value>
+            <value name="topicName">BjornTestTopic</value>
+            <record name="keyCoder" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="type">STRING</value>
+              <value name="type_display">String</value>
+              <record name="parameters" javaclass="com.wm.data.ISMemDataImpl">
+                <array name="nameValue" type="record" depth="1">
+                  <record javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="name">charsetName</value>
+                    <value name="value">UTF-8</value>
+                  </record>
+                </array>
+              </record>
+              <value name="charsetName">UTF-8</value>
+            </record>
+            <record name="valueCoder" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="type">RAW</value>
+              <value name="type_display">raw</value>
+              <record name="parameters" javaclass="com.wm.data.ISMemDataImpl">
+              </record>
+            </record>
+            <value name="aliasName">T2_SapInvixio_Streaming_kafka</value>
+          </record>
+        </array>
+      </record>
+    </array>
+  </record>
+</IDataXMLCoder>
